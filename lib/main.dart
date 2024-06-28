@@ -1,12 +1,9 @@
 import 'package:bookmyseat/controller/booking_provider.dart';
-// import 'package:bookmyseat/utils/hive_service.dart';
 import 'package:bookmyseat/view/seat_input_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  // await HiveService.init();
   runApp(const MyApp());
 }
 
