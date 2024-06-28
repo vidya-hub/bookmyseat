@@ -33,6 +33,7 @@ class SeatBookingBottomSheetState extends State<SeatBookingBottomSheet> {
   Widget build(BuildContext context) {
     return SizedBox(
       height: ScreenConfig.height * 0.6,
+      width: ScreenConfig.width,
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Consumer<BookingProvider>(

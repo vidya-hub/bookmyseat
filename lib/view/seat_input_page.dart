@@ -13,17 +13,15 @@ class SeatInputPage extends StatefulWidget {
 }
 
 class _SeatInputPageState extends State<SeatInputPage> {
-  @override
-  void initState() {
-    Future.delayed(Duration.zero, () {
-      ScreenConfig.initiaLize(context);
-    });
-
-    super.initState();
-  }
-
   TextEditingController rowsController = TextEditingController();
   TextEditingController columnsController = TextEditingController();
+
+  @override
+  void didChangeDependencies() {
+    ScreenConfig.initiaLize(context);
+
+    super.didChangeDependencies();
+  }
 
   @override
   Widget build(BuildContext context) {
